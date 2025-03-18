@@ -1,0 +1,48 @@
+body {
+    background: linear-gradient(to bottom, lightorange, lightblue);
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center; /* Center align all text */
+}
+
+.nav-container {
+    margin-top: 20px;
+}
+
+.nav-buttons {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-button {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #555;
+}
+
+.emergency-contact {
+    background-color: red;
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    position: relative;
+}
+
+.emergency-contact::before {
+    content: "🔥";
+    position: absolute;
+    left: 10px;
+    font-size: 1.5em;
+}
